@@ -1,0 +1,8 @@
+stages:
+- name: publish httpd helm chart
+  steps:
+  - runScriptConfig:
+      image: httpd
+      shellScript: publish-chart.sh
+timeout: 5
+notification: {}
