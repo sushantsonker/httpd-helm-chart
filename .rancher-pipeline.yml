@@ -4,5 +4,9 @@ stages:
   - runScriptConfig:
       image: httpd
       shellScript: publish-chart.sh
+    env:
+      HELM_REPO_PASSWORD: Rua46llaa
+      HELM_REPO_URL: https://sushantsonker.github.io/httpd-helm-chart/httpd-0.1.0.tgz
+      HELM_REPO_USERNAME: sushantsonker
 timeout: 5
 notification: {}
